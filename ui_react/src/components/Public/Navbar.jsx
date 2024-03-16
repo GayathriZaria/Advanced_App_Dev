@@ -1,49 +1,47 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-  const links=
-  [
+  const NavLinks = [
     {
-        name: 'Home',
-        path: '/'
+      title: "Home",
+      path: "/"
     },
     {
-        name: 'Contact',
-        path: '/contact'
+      title: "Contact",
+      path: "/contact"
     },
     {
-        name: 'Login',
-        path: '/login'
+      title: "Login",
+      path: "/login"
     }
-  ]
-  return (
-    <>
-        <div className='h-[5vh] w-screen flex flex-row bg-blue-400 justify-center items-center'>
-            <div className='w-[80%] h-full flex felx-row justify-center items-center'>
-                <div className='w-1/4'>
-                    QUIZ APP
-                </div>
-                <div className='w-3/4 flex flex-row justify-center items-center'>
-                    {links.map((link,index) => (
-                        <NavLink key={index} to={link.path}>
-                            {link.name}
-                        </NavLink>
-                    ))}
-                    <div>
-                        Home
-                    </div>
-                    <div>
-                        About
-                    </div>
-                    <div>
-                        Login
-                    </div>
-                </div>
-            </div>
-        </div>
-    </>
-  )
-}
+  ];
 
-export default Navbar
+  return (
+    <div className="bg-white shadow-sm sticky top-0">
+      <div className="container mx-auto py-4 px-6">
+        <div className="flex justify-between items-center">
+          <h1 className="font-bold text-lg">
+            Gift
+            <span className="text-blue-500"></span>
+          </h1>
+          <ul className="flex space-x-6 text-lg font-bold">
+            {NavLinks.map((link, index) => (
+              <li key={index}>
+                <NavLink
+                  to={link.path}
+                  className="text-gray-800 hover:text-blue-500 transition duration-300"
+                  activeClassName="text-blue-500"
+                >
+                  {link.title}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

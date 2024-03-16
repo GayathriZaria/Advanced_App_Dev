@@ -1,1 +1,45 @@
-@tailwind 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    border-bottom: 4px solid rgb(22, 120, 249);
+    color: rgb(22, 151, 249);
+}
+
+.particle-bg-x {
+    background-color: transparent;
+    background-image: radial-gradient(rgb(0, 179, 255) 2px, #ffffff10 1px);
+    background-size: 50px 40px;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: center;
+}
+
+.custom-loader {
+    width: 120px;
+    height: 22px;
+    border-radius: 20px;
+    color: #16a2f9;
+    border: 2px solid;
+    position: relative;
+  }
+  
+  .custom-loader::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: #16a2f9;
+    animation: p6 2s infinite;
+  }
+  
+  @keyframes p6 {
+    100% {
+      inset: 0
+    }
+  }
