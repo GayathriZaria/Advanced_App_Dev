@@ -1,23 +1,21 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import UserLeftbar from '../components/Customer/Leftbar';
-import UserTopBar from '../components/Customer/Topbar';
-import TitleBar from '../components/Customer/Titlebar';
+import Leftbar from '../components/Admin/Leftbar';
+import TopBar from '../components/Admin/Topbar';
+import TitleBar from '../components/Admin/Titlebar';
 
-const UserLayout = () => {
+const AdminLayout = () => {
     return (
         <>
+            <TitleBar/>
             <div className='m-0 p-0 flex flex-row h-[100vh] w-[100vw] overflow-hidden'>
-                <UserLeftbar />
-                <div className=''>
-                    <TitleBar />
+                <Leftbar/>
                         <div className='w-[85vw] h-[95vh] flex flex-col p-2 gap-4'>
                             <Outlet />
                         </div>
-                </div>
             </div>
         </>
     );
 };
 
-export default UserLayout;
+export default AdminLayout;

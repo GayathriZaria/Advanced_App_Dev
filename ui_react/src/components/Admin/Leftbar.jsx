@@ -1,10 +1,8 @@
-import React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, CreditCard, BookCheck, Cog } from 'lucide-react';
-
-const UserLeftbar = () => {
-    const navigate = useNavigate();
-
+import React from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { LayoutDashboard, CreditCard, BookCheck } from 'lucide-react'
+const Leftbar = () => {
+    const navigate = useNavigate()
     const UserLinks = [
         {
             title: 'Dashboard',
@@ -12,31 +10,19 @@ const UserLeftbar = () => {
             icon: LayoutDashboard
         },
         {
-            title: 'Place Order',
-            path: '/placeOrders',
-            icon: CreditCard
-        },
-        {
-            title: 'Order Details',
-            path: '/orderDetails',
+            title: 'Orders',
+            path: '/orders',
             icon: BookCheck
         },
         {
-            title: 'Contact',
-            path: '/contact',
+            title: 'Payment',
+            path: '/paymentHistory',
             icon: CreditCard
         },
-        {
-            title: 'Profile',
-            path: '/profile',
-            icon: Cog
-        }
-    ];
-
+    ]
     const handleLogout = () => {
-        navigate('/');
-    };
-
+        navigate('/')
+    }
     return (
         <>
             <div className='w-[15vw] bg-blue-50/20 shadow-md shadow-blue-500 flex flex-col'>
@@ -62,7 +48,7 @@ const UserLeftbar = () => {
                 </div>
             </div>
         </>
-    );
-};
+    )
+}
 
-export default UserLeftbar;
+export default Leftbar
