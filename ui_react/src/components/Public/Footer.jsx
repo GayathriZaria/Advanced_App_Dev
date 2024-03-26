@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8">
       <div className="footer-bottom">
       <div className="text-lg font-semibold">
-        <p className="copyright">© 2024 Hash It Out. </p>
+        <p className="copyright">© 2024 IGLOO gifts. </p>
       </div>
         <p>All rights reserved.</p>
       </div>
@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="footer-col">
           <h4 className="text-lg font-semibold">Contact Us</h4>
           <ul className="mt-4">
-            <li><a href="mailto:beat.vibes.event@gmail.com" className="hover:text-gray-400">hashitout.gifts@gmail.com</a></li>
+            <li><a href="mailto:beat.vibes.event@gmail.com" className="hover:text-gray-400">igloo.gifts@gmail.com</a></li>
             <li><a href="tel:9876543210" className="hover:text-gray-400">9876543210</a></li>
           </ul>
         </div>

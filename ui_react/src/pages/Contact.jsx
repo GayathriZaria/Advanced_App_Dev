@@ -41,7 +41,7 @@ const Contact = () => {
             <p className="text-lg font-semibold mb-1">Mobile Number</p>
             <p className="mb-4">9876543210</p>
             <p className="text-lg font-semibold mb-1">Mail ID</p>
-            <p className="mb-4">hashitout@gmail.com</p>
+            <p className="mb-4">igloo.gifts@gmail.com</p>
             <p className="text-lg font-semibold mb-1">Location</p>
             <p>Abc street, beta city, Coimbatore - 641 041</p><br/>
           </div>

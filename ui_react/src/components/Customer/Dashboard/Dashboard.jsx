@@ -112,7 +112,7 @@ const Dashboard = () => {
               </>
             )}
             {!isAdmin && (
-              <Link to="/order" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+              <Link to="/placeOrders" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
                 Order
               </Link>
             )}

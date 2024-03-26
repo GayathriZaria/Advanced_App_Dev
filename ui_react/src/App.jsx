@@ -24,12 +24,12 @@ const App = () => {
     <BrowserRouter>
     <Suspense fallback='Loading...'>
         <Routes>
-            <Route path='/' element={<Login/>}/>
+            <Route path='/login' element={<Login/>}/>
             <Route path='/register' element={<Register/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/profile' element={<UserProfile/>}/>
           <Route element={<Weblayout/>}>
-            <Route path='/home' element={<Home/>}/>
+            <Route path='/' element={<Home/>}/>
           </Route>
           <Route element={<UserLayout/>}>
             <Route path='/dashboard' element={<Dashboard/>}/>

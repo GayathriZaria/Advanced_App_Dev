@@ -5,7 +5,7 @@ const Navbar = () => {
   const NavLinks = [
     {
       title: "Home",
-      path: "/home"
+      path: "/"
     },
     {
       title: "Dashboard",
@@ -17,7 +17,7 @@ const Navbar = () => {
     },
     {
       title: "Login",
-      path: "/"
+      path: "/login"
     }
   ];
 

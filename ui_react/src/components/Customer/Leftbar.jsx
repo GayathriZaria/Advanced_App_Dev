@@ -34,14 +34,14 @@ const UserLeftbar = () => {
     ];
 
     const handleLogout = () => {
-        navigate('/');
+        navigate('/login');
     };
 
     return (
         <>
             <div className='w-[15vw] bg-blue-50/20 shadow-md shadow-blue-500 flex flex-col'>
                 <div className='h-[5vh] bg-blue-100/10 text-black flex items-center justify-center w-full font-bold border-b-2'>
-                    Hash <span className='text-blue-500'> It Out </span>
+                IGLOO <span className='text-blue-500'> gifts </span>
                 </div>
                 <div className='h-[90vh] flex flex-col gap-1'>
                     {

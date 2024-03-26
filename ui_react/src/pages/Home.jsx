@@ -68,7 +68,7 @@ export default function App() {
       </Swiper>
       <br/>
       <div className="homepage-container">
-      <h1 style={{ fontFamily: 'Arial, sans-serif', textAlign: 'center', color: '#333', fontSize: '2.5rem', fontWeight: 'bold', fontStyle: 'italic' }}>Welcome to Hash It Out Customized Gifts!</h1>
+      <h1 style={{ fontFamily: 'Arial, sans-serif', textAlign: 'center', color: '#333', fontSize: '2.5rem', fontWeight: 'bold', fontStyle: 'italic' }}>Welcome to IGLOO gifts Customized Gifts!</h1>
       <p style={{ fontFamily: 'Georgia, serif', textAlign: 'center', color: '#555', fontSize: '1.2rem', fontStyle: 'italic' }}>About Us: Making Memories, One Gift at a Time</p>
       <blockquote style={{ fontFamily: 'Verdana, sans-serif', textAlign: 'center', color: '#777', fontSize: '1.5rem', fontWeight: 'bold' }}>Unleash Your Creativity and Design the Perfect Present</blockquote>
       <p style={{ fontFamily: 'Times New Roman, serif', textAlign: 'center', color: '#999', fontSize: '1.1rem', fontStyle: 'italic' }}>Browse Our Collection of Unique and Thoughtful Gifts</p>

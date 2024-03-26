@@ -106,7 +106,7 @@ const Register = () => {
 
                 <button type="submit" className='w-[80%] bg-gradient-to-tr from-orange-600 to-orange-300 text-white p-2 rounded-sm font-bold mt-4 shadow-md shadow-orange-500/40'>Register</button>
                 {error && <p className="text-red-500">{error}</p>}
-                <p>Already have an account ? <span className='text-orange-500 cursor-pointer font-bold' onClick={() => navigate('/')}> Login ! </span></p>
+                <p>Already have an account ? <span className='text-orange-500 cursor-pointer font-bold' onClick={() => navigate('/login')}> Login ! </span></p>
             </form>
         </div>
     );
